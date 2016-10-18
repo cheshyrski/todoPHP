@@ -4,7 +4,8 @@ body {
 
 body,
 input {
-	font: 1em "Comfortaa", sans-serif;
+    font: 1em "Noto Sans", sans-serif;
+	/*font: 1em "Comfortaa", sans-serif;*/
 	color: #363639;
 }
 

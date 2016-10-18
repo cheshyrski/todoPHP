@@ -23,8 +23,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TODO list</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa&subset=cyrillic" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css?family=Comfortaa&subset=cyrillic" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
@@ -35,7 +35,7 @@
     	<ul class="items">
     	    <?php foreach($items as $item): ?>
     		<li>
-    		  <span class="item<?php echo $item['done'] ? " done" : "" ?>"><?php echo $item['name']; ?></span>
+    		  <span class="item<?php echo $item['done'] ? " done" : ""; ?>"><?php echo $item['name']; ?></span>
     		  <?php if(!$item['done']): ?>
     		    <a href="mark.php?as=done&item=<?php echo $item['id']; ?>" class="done-button">mark as done</a>
     		<?php endif; ?>
@@ -47,7 +47,7 @@
     		</li>
     	</ul>
         <?php else: ?>
-        	<p>You haven't added amy items yet</p>
+        	<p>You haven't added any items yet</p>
         <?php endif; ?>
 
     	<form class="item-add" action="add.php" method="post">
